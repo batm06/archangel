@@ -1,0 +1,13 @@
+{
+    "token": "T0K3N",
+    "prefix": ".",
+    "botname": "Archangel",
+    "modules": {
+        "activities": [
+            "with the .help command.",
+            "with the developers console.",
+            "with your heart.",
+            "deadbender.com/archangel | .help"
+        ]
+    }
+}
