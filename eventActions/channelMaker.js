@@ -1,0 +1,1 @@
+//when users join specifc channel, create channel and move them into it
