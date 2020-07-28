@@ -55,7 +55,7 @@ class messageFilter {
         // grab all profanity
         const containedProfanity = bannedArray.some(substring => {
             return lowerCase.includes(substring);
-    })}    when (filterToggle = true){
+    })}    while (filterToggle = true){
         if (containedProfanity) {
             const warnedUser = message.channel.author(user);
             let warningNumber;
