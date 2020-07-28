@@ -4,10 +4,18 @@ let warningNumber = 5 //change to client input
 let warningMax;
 let filterToggle = false
 let perms = message.member.permissions;
-let has_Admin = perms.has("ADMINISTRATOR")
-const cont = message.content.toLowerCase()
-if (cont.includes(`!toggle filter` && (message.author.has_Admin))){ //placeholder
+const cont = message.content.toLowerCase();
+
+
+//filter toggle
+if (cont.includes(`!toggle filter` && (message.author.perms.has("ADMINISTRATOR")))){ //placeholder
     if (filterToggle = false){
+        message.channel.send('which words would you like to ban? (be sure to evenly space the banned words in one message)').then
+        if (cont.includes('')){
+            const bannedWords = cont;
+            const bannedArray = bannedwords.split(' ');
+        }
+        if (message.content.includes(""))
         filterToggle === true 
         message.channel.send({embed: {
             color: ('#5E81AC'),
@@ -22,6 +30,10 @@ if (cont.includes(`!toggle filter` && (message.author.has_Admin))){ //placeholde
     }
     }
 }
+
+
+
+//actual filter code
 class messageFilter {
     static async checkForProfanity(client, message) {
         const bannedWords = ["bitch", "cock", "dick", "fag", "fuck", "idiot", "piss", "pussy", "porn", "retard", "shit", "tranny"];
