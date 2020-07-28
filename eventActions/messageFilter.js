@@ -8,6 +8,8 @@ const cont = message.content.toLowerCase();
 
 
 //filter toggle
+
+
 if (cont.includes(`!toggle filter` && (message.author.perms.has("ADMINISTRATOR")))){ //placeholder
     if (filterToggle = false){
         message.channel.send('which words would you like to ban? (be sure to evenly space the banned words in one message)').then
@@ -41,9 +43,10 @@ class messageFilter {
         const containedProfanity = bannedArray.some(substring => {
             return lowerCase.includes(substring);
     })
-
-        if (containedProfanity && (filterToggle = true)) {
-            const warnedUser = message.channel.author(user);
+    when (filterToggle = true){
+        if (containedProfanity) {
+            const warnedUser = message.channel.author(user)
+            let warningNumber
             warningNumber++;
             message.channel.send({embed: {
                 color: ('#5E81AC'),
@@ -54,7 +57,7 @@ class messageFilter {
                         
                     
                     }
-        
+                }
                 }
             }};              
 
